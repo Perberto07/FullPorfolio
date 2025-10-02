@@ -4,7 +4,7 @@ using NETReact.Shared.DTOs.ProjectDtos;
 using NETReact.Shared.Models;
 
 namespace Backend.Services.ProjectService
-{
+{   
     public class ProjectServ : IProjectServ
     {
         private readonly DataContext _context;

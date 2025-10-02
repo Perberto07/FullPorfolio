@@ -8,7 +8,7 @@ COPY NETReact.Shared/NETReact.Shared.csproj NETReact.Shared/
 COPY NETReact.sln ./
 
 # Restore dependencies
-RUN dotnet restore NETReact.sln
+RUN dotnet restore Backend/Backend.csproj
 
 # Copy all source
 COPY Backend/ Backend/
