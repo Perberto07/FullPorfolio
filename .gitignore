@@ -1,0 +1,17 @@
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+
+# Rider / JetBrains
+.idea/
+
+# Logs
+*.log
+
+# Other temp
+*.vsidx
