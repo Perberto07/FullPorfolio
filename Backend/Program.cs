@@ -38,7 +38,8 @@ builder.Services.AddCors(options =>
        policy =>
        {
            policy.WithOrigins("https://portfolio-lilac-seven-mk1o21sxnv.vercel.app/",
-                              "http://localhost:65514")
+                              "http://localhost:65514",
+                              "https://portfolio-hh2m6ynkq-perbertos-projects.vercel.app/")
                  .AllowAnyHeader()
                  .AllowAnyMethod();
        });
