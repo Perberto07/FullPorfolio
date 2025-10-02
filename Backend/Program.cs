@@ -37,7 +37,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend",
        policy =>
        {
-           policy.WithOrigins("https://portfolio-lilac-seven-mk1o21sxnv.vercel.app",
+           policy.WithOrigins("https://portfolio-perbertos-projects.vercel.app",
                               "http://localhost:65514",
                               "https://portfolio-hh2m6ynkq-perbertos-projects.vercel.app")
                  .AllowAnyHeader()
