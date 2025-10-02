@@ -67,13 +67,13 @@ if (app.Environment.IsDevelopment())
 }
 using (var scope = app.Services.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<DbContext>();
+    var db = scope.ServiceProvider.GetRequiredService<DataContext>();
     db.Database.Migrate();   // applies any pending migrations
 }
 app.UseHttpsRedirection();
 app.UseCors("AllowFrontend");
-app.UseAuthorization();
 app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
